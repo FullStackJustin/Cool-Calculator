@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -16,9 +16,6 @@ function App() {
   const allClear = () => {
     setExpression("");
     setAnswer(0);
-  }
-  const glow = () => {
-    this.style.backgroundColor = "white";
   }
 
   const plusMinus =  (expression) => {

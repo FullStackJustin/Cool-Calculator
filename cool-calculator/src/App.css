@@ -42,12 +42,6 @@ i:link{
   width:100%;
   display:grid;
   grid-template-columns: repeat(4,25%);
-  grid-area: 
-  "ac" "plusMinus" "percent" "division"
-  "seven" "eight" "nine" "multiply"
-  "four" "five" "six" "subtract"
-  "one" "two" "three" "add"
-  "zero""zero" "dot" "equals";
 }
 .lightBtn:hover {
   border: 1px solid white;
