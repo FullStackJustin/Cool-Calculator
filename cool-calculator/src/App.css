@@ -1,0 +1,187 @@
+body{
+  background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000");
+  background-repeat: no-repeat;
+  /* background-size: */
+}
+h1{
+  display:flex;
+  justify-content: center;
+  color: rgb(2, 2, 151);
+}
+.gitLink:hover{
+  color: rgb(2, 2, 151);
+
+}
+.gitLink:active,
+.gitLink:visited{
+  color:rgb(120, 25, 25);
+}
+i:link{
+  color:  rgba(68, 68, 68, 0.669);
+}
+.calcContainer{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: absolute;
+  top:25%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 20vw;
+  background-color:black;
+}
+.btnGrid{
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+  position:absolute;
+  top:30%;
+  height:70%;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(4,25%);
+  grid-area: 
+  "ac" "plusMinus" "percent" "division"
+  "seven" "eight" "nine" "multiply"
+  "four" "five" "six" "subtract"
+  "one" "two" "three" "add"
+  "zero""zero" "dot" "equals";
+}
+.lightBtn:hover {
+  border: 1px solid white;
+}
+.lightBtn{
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: rgba(211, 209, 209, 0.669);
+  margin:3px;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.darkBtn:hover {
+  border: 1px solid white;
+
+}
+.darkBtn{
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color:  rgb(2, 2, 151);
+  margin:3px;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+.equals:hover {
+  border: 1px solid white;
+
+}
+.equals{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: rgb(120, 25, 25);
+  margin:3px;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+  
+}
+.numBtn:hover{
+  border: 1px solid white;
+
+}
+.numBtn{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: rgba(68, 68, 68, 0.669);
+  margin:3px;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.extraSpace:hover {
+  border: 1px solid white;
+}
+.extraSpace{
+  background-color: rgba(68, 68, 68, 0.669);
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0px 25px 25px 0px;
+  cursor: pointer;
+}
+.zero:hover{
+  border: 1px solid white;
+
+}
+.zero{
+  cursor: pointer;
+  background-color: rgba(68, 68, 68, 0.669);
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 25px 0px 0px 25px;
+}
+.output input {
+  border:none;
+  background-color:black;
+  text-align: right;
+  width: 98.5%;
+  font-size: 1em;
+  color: rgb(211, 207, 207);
+}
+.output{
+  padding-right:5px;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 2em;
+  display: grid;
+  grid-template: repeat(1,100%);
+  grid-template-areas: 
+  "expression"
+  "answer"
+  ;
+  justify-content: end;
+  align-items: flex-start;
+  text-align: right;
+  color:white;
+  margin-right:-1px;
+  margin-left: -1px;
+  width:100%;
+  height:30%;
+}
+.gitLink{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:60px;
+}
+.githubLogo{
+  display: flex;
+  justify-content: center;
+}
