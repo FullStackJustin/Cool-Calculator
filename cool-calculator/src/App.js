@@ -8,7 +8,9 @@ function App() {
   const display = (symbol) => {
     setExpression(prev => prev + symbol)
   }
-
+  const percent = () => {
+    setExpression(answer => answer / 100)
+  }
   const calculate = () => {
     setAnswer(eval(expression));
   }
@@ -18,10 +20,8 @@ function App() {
     setAnswer(0);
   }
 
-  const plusMinus =  (expression) => {
-    var number = parseInt(expression);
-    setExpression(number.prepend("-"));
-    return number;
+  const plusMinus = () => {
+    setExpression(answer.prepend("-"));
   }
   return (
     <div>
@@ -34,7 +34,7 @@ function App() {
         <div className="btnGrid">
           <div onClick={allClear} className="lightBtn ac">AC</div>
           <div onClick={plusMinus} className="lightBtn plusMinus">+/-</div>
-          <div onClick={() => display("%")} className="lightBtn percent">%</div>
+          <div onClick={percent} className="lightBtn percent">%</div>
           <div onClick={() => display("/")} className="darkBtn division">/</div>
           <div onClick={() => display("7")} className="numBtn seven">7</div>
           <div onClick={() => display("8")} className="numBtn eight">8</div>
